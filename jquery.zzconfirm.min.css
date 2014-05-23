@@ -1,4 +1,4 @@
-/* jQuery plugin zzConfirm v0.1 by zzbaivong <http://devs.forumvi.com> */
+/* jQuery plugin zzConfirm v0.1 by zzbaivong (http://devs.forumvi.com) */
 #zzConfirm_wrap{background:none repeat scroll 0 0 #FFF;border:1px solid #DDD;min-width:140px;position:absolute;text-align:center;z-index:100;padding:7px 13px}
 #zzConfirm_content{border-bottom:1px solid #DDD;color:#444;margin-bottom:7px;padding-bottom:5px}
 #zzConfirm_btn > div{background:none repeat scroll 0 0 #004FBC;color:#FFF;display:inline-block;margin-left:10%;width:45%;padding:3px 0}
