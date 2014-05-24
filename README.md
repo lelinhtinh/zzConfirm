@@ -5,4 +5,4 @@ Make a confirmation bubble with jQuery and CSS
 
 
 ***Demo:*** 
-http://jsfiddle.net/baivong/gpvsm/
+http://goo.gl/s6xnXz
