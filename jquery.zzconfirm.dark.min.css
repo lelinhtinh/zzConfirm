@@ -1,18 +1,18 @@
-/* jQuery plugin zzConfirm v0.1 by zzbaivong (http://devs.forumvi.com) */
-#zzConfirm_wrap{background:#222;border:1px solid #555;min-width:140px;position:absolute;text-align:center;z-index:100;padding:7px 13px}
-#zzConfirm_content{border-bottom:1px solid #555;color:#ddd;margin-bottom:7px;padding-bottom:5px}
-#zzConfirm_btn > div{background:#04B;color:#FFF;display:inline-block;margin-left:10%;width:45%;padding:3px 0}
-#zzConfirm_btn > div:last-child{background:#F33}
+/* jQuery plugin zzConfirm v0.2 by zzbaivong (http://devs.forumvi.com) */
+#zzConfirm_wrap{background:none repeat scroll 0 0 #222;border:1px solid #555;min-width:140px;position:absolute;text-align:center;z-index:100;padding:7px 13px}
+#zzConfirm_content{border-bottom:1px solid #555;color:#DDD;margin-bottom:7px;padding-bottom:5px}
+#zzConfirm_btn > div{background:none repeat scroll 0 0 #04B;color:#FFF;display:inline-block;margin-left:10%;width:45%;padding:3px 0}
+#zzConfirm_btn > div:last-child{background:none repeat scroll 0 0 #F33}
 #zzConfirm_btn > div:first-child{margin-left:0}
-#zzConfirm_btn > div:hover{background:#555;cursor:pointer}
-#zzConfirm_wrap #zzConfirm_arrow,#zzConfirm_wrap #zzConfirm_arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}
-#zzConfirm_wrap #zzConfirm_arrow{border-width:11px}
-#zzConfirm_wrap #zzConfirm_arrow:after{content:"";border-width:10px}
-#zzConfirm_wrap.top #zzConfirm_arrow{bottom:-11px;left:50%;margin-left:-11px;border-top-color:#666;border-bottom-width:0}
-#zzConfirm_wrap.top #zzConfirm_arrow:after{bottom:1px;margin-left:-10px;border-top-color:#222;border-bottom-width:0}
-#zzConfirm_wrap.right #zzConfirm_arrow{top:50%;left:-11px;margin-top:-11px;border-right-color:#666;border-left-width:0}
-#zzConfirm_wrap.right #zzConfirm_arrow:after{bottom:-10px;left:1px;border-right-color:#222;border-left-width:0}
-#zzConfirm_wrap.bottom #zzConfirm_arrow{top:-11px;left:50%;margin-left:-11px;border-bottom-color:#666;border-top-width:0}
-#zzConfirm_wrap.bottom #zzConfirm_arrow:after{top:1px;margin-left:-10px;border-bottom-color:#222;border-top-width:0}
-#zzConfirm_wrap.left #zzConfirm_arrow{top:50%;right:-11px;margin-top:-11px;border-left-color:#666;border-right-width:0}
-#zzConfirm_wrap.left #zzConfirm_arrow:after{right:1px;bottom:-10px;border-left-color:#222;border-right-width:0}
+#zzConfirm_btn > div:hover{background:none repeat scroll 0 0 #555;cursor:pointer}
+#zzConfirm_wrap:before,#zzConfirm_wrap:after{position:absolute;display:block;width:0;height:0;content:"";border-color:transparent;border-style:solid}
+#zzConfirm_wrap:before{border-width:11px}
+#zzConfirm_wrap:after{border-width:10px}
+#zzConfirm_wrap.top:before{bottom:-11px;left:50%;margin-left:-11px;border-top-color:#444;border-bottom-width:0}
+#zzConfirm_wrap.top:after{bottom:-10px;left:50%;margin-left:-10px;border-top-color:#222;border-bottom-width:0}
+#zzConfirm_wrap.right:before{top:50%;left:-11px;margin-top:-11px;border-right-color:#444;border-left-width:0}
+#zzConfirm_wrap.right:after{top:50%;margin-top:-10px;left:-10px;border-right-color:#222;border-left-width:0}
+#zzConfirm_wrap.bottom:before{top:-11px;left:50%;margin-left:-11px;border-bottom-color:#444;border-top-width:0}
+#zzConfirm_wrap.bottom:after{top:-10px;left:50%;margin-left:-10px;border-bottom-color:#222;border-top-width:0}
+#zzConfirm_wrap.left:before{top:50%;right:-11px;margin-top:-11px;border-left-color:#444;border-right-width:0}
+#zzConfirm_wrap.left:after{top:50%;right:-10px;margin-top:-10px;border-left-color:#222;border-right-width:0}
