@@ -23,6 +23,8 @@
             cancel: function(ele, boxes) {}
         }, options);
 
+        var ele, wrap;
+
         var setDir = function(el, wra) {
             var objW = el.outerWidth();
             var objH = el.outerHeight();
@@ -67,7 +69,7 @@
         return obj.on('click', function(event) {
             event.preventDefault();
 
-            var ele = $(this);
+            ele = $(this);
 
             var destroy = function(wra) {
                 var wrap = $('#zzConfirm_wrap');
@@ -93,8 +95,6 @@
             } else if (!thisEle) {
 
                 ele.addClass('zzConfirm_active');
-
-                var wrap;
 
                 if (!$('#zzConfirm_wrap').length) {
                     $('body').append('<div id="zzConfirm_wrap" style="width:' + setting.width + ';left:50%;top:-100px;display:none"><div id="zzConfirm_content"></div><div id="zzConfirm_btn"><div id="zzConfirm_yes"></div><div id="zzConfirm_cancel"></div></div><div id="zzConfirm_arrow"></div></div>');
