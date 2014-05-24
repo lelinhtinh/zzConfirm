@@ -1,5 +1,5 @@
 /*!
- * jQuery Plugin zzConfirm v0.1
+ * jQuery Plugin zzConfirm v0.2
  *
  * by zzbaivong
  * http://devs.forumvi.com/
@@ -97,7 +97,7 @@
                 ele.addClass('zzConfirm_active');
 
                 if (!$('#zzConfirm_wrap').length) {
-                    $('body').append('<div id="zzConfirm_wrap" style="width:' + setting.width + ';left:50%;top:-100px;display:none"><div id="zzConfirm_content"></div><div id="zzConfirm_btn"><div id="zzConfirm_yes"></div><div id="zzConfirm_cancel"></div></div><div id="zzConfirm_arrow"></div></div>');
+                    $('body').append('<div id="zzConfirm_wrap" style="width:' + setting.width + ';left:50%;top:-100px;display:none"><div id="zzConfirm_content"></div><div id="zzConfirm_btn"><div id="zzConfirm_yes"></div><div id="zzConfirm_cancel"></div></div></div>');
                     wrap = $('#zzConfirm_wrap');
                     center = ($(window).width() - wrap.outerWidth()) / 2;
                     wrap.css('left', center);
@@ -120,12 +120,9 @@
                     setting.cancel(ele, wrap);
                 });
 
-                wrap.attr('data-selector', select).animate({
-                    width: setting.width
-                }, 200, function() {
-                    setDir(ele, wrap);
-                });
-
+                wrap.attr('data-selector', select).css('width', setting.width);
+                setDir(ele, wrap);
+                
                 var reDir = true;
                 $(window).resize(function() {
                     if (reDir) {
